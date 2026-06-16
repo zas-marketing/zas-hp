@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【テストサイト】株式会社ZAS（仮）| お問い合わせ</title>
+<meta name="description" content="【テスト用ダミーサイト】お問い合わせページ。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="test-banner">🚧 これはテストサイトです（本番コンテンツ未入稿）</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">ZAS<span class="logo-sub">（テスト）</span></a>
+    <nav class="site-nav">
+      <a href="index.html">トップ</a>
+      <a href="services.html">サービス</a>
+      <a href="about.html">会社概要</a>
+      <a href="contact.html" class="active">お問い合わせ</a>
+    </nav>
+    <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <p class="page-tag">CONTACT（テスト）</p>
+      <h1>お問い合わせ</h1>
+      <p class="page-lead">［ページリード文ダミー］お問い合わせ前の案内文がここに入ります。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <p class="notice">※このフォームはダミーです。送信ボタンを押しても実際には送信されません。</p>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('これはテスト用フォームです。実際の送信は行われません。');">
+        <div class="form-row">
+          <label for="name">お名前 <span class="required">必須</span></label>
+          <input type="text" id="name" name="name" placeholder="例：山田 太郎（テスト）" required>
+        </div>
+        <div class="form-row">
+          <label for="company">会社名</label>
+          <input type="text" id="company" name="company" placeholder="例：株式会社サンプル（テスト）">
+        </div>
+        <div class="form-row">
+          <label for="email">メールアドレス <span class="required">必須</span></label>
+          <input type="email" id="email" name="email" placeholder="example@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+          <textarea id="message" name="message" rows="6" placeholder="［テスト用入力欄］お問い合わせ内容をご記入ください。" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">送信する（テスト）</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-logo">ZAS（テスト）</p>
+    <nav class="footer-nav">
+      <a href="index.html">トップ</a>
+      <a href="services.html">サービス</a>
+      <a href="about.html">会社概要</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <p class="copyright">&copy; 2026 株式会社ZAS（テスト表示）</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
