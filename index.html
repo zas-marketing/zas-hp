@@ -2,62 +2,378 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZAS | 準備中</title>
-<meta name="description" content="ただいまサイトを準備中です。">
-<style>
-  *, *::before, *::after { box-sizing: border-box; }
-
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    color: #1a1a1a;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
-      "Hiragino Kaku Gothic ProN", "Yu Gothic UI", Meiryo, sans-serif;
-    text-align: center;
-    padding: 2rem;
-  }
-
-  .logo {
-    font-size: 2rem;
-    font-weight: 800;
-    letter-spacing: .2em;
-    margin-bottom: 3rem;
-  }
-
-  h1 {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #6b6b6b;
-    letter-spacing: .1em;
-    margin: 0 0 1rem;
-  }
-
-  p {
-    font-size: .95rem;
-    color: #9a9a9a;
-    margin: 0;
-    line-height: 1.8;
-  }
-
-  .divider {
-    width: 32px;
-    height: 1px;
-    background: #e5e5e7;
-    margin: 2rem auto;
-  }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>株式会社ZAS（サンプル）| 飲食店の集客・採用・厨房機器をワンストップで支援</title>
+<meta name="description" content="（サンプル）飲食店専門の総合サポート会社。広告・集客支援、人材採用支援、厨房機器販売を一社でご提案します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@500;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="logo">ZAS</div>
-  <h1>COMING SOON</h1>
-  <p>ただいまウェブサイトを準備中です。<br>近日公開予定です。</p>
-  <div class="divider"></div>
-  <p>お問い合わせは <a href="mailto:info@zas-inc.net" style="color:#1a1a1a;">info@zas-inc.net</a> まで</p>
+
+<!-- Header -->
+<header class="site-header" id="header">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo-text">ZAS</a>
+    <nav class="site-nav">
+      <ul id="site-menu">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="about.html">会社概要</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">サービス</a>
+          <ul class="dropdown">
+            <li><a href="service-ad.html">広告・集客支援</a></li>
+            <li><a href="service-recruit.html">人材採用支援</a></li>
+            <li><a href="service-kitchen.html">厨房機器販売</a></li>
+            <li><a href="service-support.html">開業・運営サポート</a></li>
+          </ul>
+        </li>
+        <li><a href="pricing.html">料金</a></li>
+        <li><a href="works.html">実績・事例</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="news.html">お知らせ</a></li>
+        <li><a href="recruit.html">採用情報</a></li>
+        <li><a href="contact.html" class="cta-nav">無料相談はこちら</a></li>
+      </ul>
+    </nav>
+    <div class="burger" id="burger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="slides" id="slides">
+    <div class="slide active">
+      <img class="pc" src="https://picsum.photos/seed/zas-h1/1920/1080" alt="飲食店イメージ1（サンプル）">
+      <img class="sp" src="https://picsum.photos/seed/zas-h1/750/1334" alt="">
+    </div>
+    <div class="slide">
+      <img class="pc" src="https://picsum.photos/seed/zas-h2/1920/1080" alt="飲食店イメージ2（サンプル）">
+      <img class="sp" src="https://picsum.photos/seed/zas-h2/750/1334" alt="">
+    </div>
+    <div class="slide">
+      <img class="pc" src="https://picsum.photos/seed/zas-h3/1920/1080" alt="飲食店イメージ3（サンプル）">
+      <img class="sp" src="https://picsum.photos/seed/zas-h3/750/1334" alt="">
+    </div>
+    <div class="slide">
+      <img class="pc" src="https://picsum.photos/seed/zas-h4/1920/1080" alt="飲食店イメージ4（サンプル）">
+      <img class="sp" src="https://picsum.photos/seed/zas-h4/750/1334" alt="">
+    </div>
+  </div>
+  <div class="hero-copy">
+    <div class="wrap">
+      <h1>飲食店の集客・採用・厨房づくりを、<br>ワンストップで支援。</h1>
+      <p class="hero-sub">広告運用、人材採用、厨房機器の販売まで。<br>飲食店経営に必要なサービスをまとめてご提案します。</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">無料相談はこちら</a>
+        <a href="services.html" class="btn btn-ghost-white">サービスを見る</a>
+      </div>
+    </div>
+  </div>
+  <div class="dots" id="dots"></div>
+  <div class="scroll-ind">SCROLL</div>
+</section>
+
+<!-- Intro / About -->
+<section class="section-pad" id="about">
+  <div class="wrap intro-grid">
+    <div class="rv">
+      <div class="lead">ZASについて</div>
+      <div class="bigen">ABOUT</div>
+      <h2 class="sec-title">飲食店の成長を支える、<br>専門パートナー。</h2>
+      <p>（サンプルテキスト）株式会社ZASは、飲食店の集客・採用・設備導入をトータルで支援する、飲食店専門の総合サポート会社です。</p>
+      <p style="margin-top:10px;">（サンプルテキスト）店舗運営において課題となりやすい「お客様を増やす」「人材を確保する」「厨房環境を整える」という3つの領域を中心に、飲食店オーナー様の経営をサポートします。</p>
+      <a href="about.html" class="arrow-link" style="margin-top:28px;display:inline-flex;">会社概要を見る</a>
+    </div>
+    <div class="intro-imgs rv rv-d1">
+      <img src="https://picsum.photos/seed/zas-about1/900/700" alt="サンプル画像">
+      <img src="https://picsum.photos/seed/zas-about2/900/700" alt="サンプル画像">
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="service-overview section-pad" id="service">
+  <div class="wrap">
+    <div class="rv" style="text-align:center;">
+      <div class="lead" style="justify-content:center;">提供するサービス</div>
+      <div class="bigen">SERVICE</div>
+      <h2 class="sec-title" style="max-width:600px;margin:16px auto 10px;">集客・採用・厨房機器を、<br>一社でまとめてご相談いただけます。</h2>
+      <p class="sec-lead" style="margin:0 auto 0;text-align:center;">（サンプルテキスト）飲食店専門だからこそ、業種・立地・規模に合わせた的確な提案が可能です。</p>
+    </div>
+    <div class="service-cards" style="margin-top:50px;">
+      <a href="service-ad.html" class="service-card rv rv-d1">
+        <div class="service-card-img">
+          <img src="https://picsum.photos/seed/zas-s1/600/450" alt="">
+          <span class="service-card-num">01</span>
+        </div>
+        <div class="service-card-body">
+          <h3>飲食店向け<br>広告・集客支援</h3>
+          <p>（サンプル）SNS広告、Web広告、販促物制作など、来店につながる集客を支援します。</p>
+          <span class="arrow-link">詳しく見る</span>
+        </div>
+      </a>
+      <a href="service-recruit.html" class="service-card rv rv-d2">
+        <div class="service-card-img">
+          <img src="https://picsum.photos/seed/zas-s2/600/450" alt="">
+          <span class="service-card-num">02</span>
+        </div>
+        <div class="service-card-body">
+          <h3>飲食店向け<br>人材採用支援</h3>
+          <p>（サンプル）求人原稿作成から媒体選定、応募数改善まで採用活動を全面サポートします。</p>
+          <span class="arrow-link">詳しく見る</span>
+        </div>
+      </a>
+      <a href="service-kitchen.html" class="service-card rv rv-d3">
+        <div class="service-card-img">
+          <img src="https://picsum.photos/seed/zas-s3/600/450" alt="">
+          <span class="service-card-num">03</span>
+        </div>
+        <div class="service-card-body">
+          <h3>厨房機器・<br>店舗設備の販売</h3>
+          <p>（サンプル）新規開業から設備更新まで、業態・予算に合った厨房機器をご提案します。</p>
+          <span class="arrow-link">詳しく見る</span>
+        </div>
+      </a>
+      <a href="service-support.html" class="service-card rv rv-d3">
+        <div class="service-card-img">
+          <img src="https://picsum.photos/seed/zas-s4/600/450" alt="">
+          <span class="service-card-num">04</span>
+        </div>
+        <div class="service-card-body">
+          <h3>開業・店舗運営<br>サポート</h3>
+          <p>（サンプル）開業準備から既存店の改善まで、広告・採用・設備をまとめてご相談いただけます。</p>
+          <span class="arrow-link">詳しく見る</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Strengths -->
+<section class="strengths section-pad">
+  <div class="wrap">
+    <div class="rv">
+      <div class="lead">飲食店専門の強み</div>
+      <div class="bigen">STRENGTHS</div>
+      <h2 class="sec-title" style="color:#fff;">飲食店の課題を知り尽くした、<br>専門チームが対応します。</h2>
+    </div>
+    <div class="strength-grid" style="margin-top:50px;">
+      <div class="strength-item rv rv-d1">
+        <div class="num">01</div>
+        <h3>飲食店専門で<br>業界を深く理解</h3>
+        <p>（サンプル）業種・立地・客単価・ターゲット層を熟知しているため、的確な提案が可能です。</p>
+      </div>
+      <div class="strength-item rv rv-d2">
+        <div class="num">02</div>
+        <h3>集客・採用・設備を<br>まとめて相談できる</h3>
+        <p>（サンプル）複数業者に分散せず、一社でまとめてご相談いただけるため、手間とコストを削減できます。</p>
+      </div>
+      <div class="strength-item rv rv-d3">
+        <div class="num">03</div>
+        <h3>開業前から<br>既存店まで対応</h3>
+        <p>（サンプル）新規開業、リニューアル、既存店の改善など、あらゆるフェーズの店舗をサポートします。</p>
+      </div>
+      <div class="strength-item rv rv-d3">
+        <div class="num">04</div>
+        <h3>店舗ごとの課題に<br>合わせた提案</h3>
+        <p>（サンプル）業態・予算・課題に応じて最適なプランをご提案。画一的なサービスではありません。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Works -->
+<section class="section-pad" id="works">
+  <div class="wrap">
+    <div class="rv" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;">
+      <div>
+        <div class="lead">実績・事例</div>
+        <div class="bigen">WORKS</div>
+        <h2 class="sec-title">これまでの支援実績</h2>
+      </div>
+      <a href="works.html" class="arrow-link" style="flex-shrink:0;">すべての事例を見る</a>
+    </div>
+    <div class="works-grid">
+      <div class="work-card rv rv-d1">
+        <div class="work-card-img"><img src="https://picsum.photos/seed/zas-w1/800/450" alt="（サンプル）居酒屋の集客支援"></div>
+        <div class="work-card-body">
+          <span class="work-cat">広告・集客</span>
+          <h3>居酒屋の集客・宴会予約獲得を支援（サンプル）</h3>
+          <p>（サンプル）SNS広告とキャンペーン企画で、問い合わせ数・予約数の増加につながった事例。</p>
+          <a href="works.html" class="arrow-link">詳しく見る</a>
+        </div>
+      </div>
+      <div class="work-card rv rv-d2">
+        <div class="work-card-img"><img src="https://picsum.photos/seed/zas-w2/800/450" alt="（サンプル）アルバイト採用支援"></div>
+        <div class="work-card-body">
+          <span class="work-cat">人材採用</span>
+          <h3>飲食店のアルバイト採用を改善（サンプル）</h3>
+          <p>（サンプル）求人原稿の見直しと媒体変更で、応募数と採用単価を改善した事例。</p>
+          <a href="works.html" class="arrow-link">詳しく見る</a>
+        </div>
+      </div>
+      <div class="work-card rv rv-d3">
+        <div class="work-card-img"><img src="https://picsum.photos/seed/zas-w3/800/450" alt="（サンプル）厨房機器導入"></div>
+        <div class="work-card-body">
+          <span class="work-cat">厨房機器</span>
+          <h3>新規開業店舗の厨房機器一式を導入（サンプル）</h3>
+          <p>（サンプル）業態・予算に合わせた機器選定から導入調整まで、スムーズな開業をサポート。</p>
+          <a href="works.html" class="arrow-link">詳しく見る</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials section-pad">
+  <div class="wrap">
+    <div class="rv" style="text-align:center;">
+      <div class="lead" style="justify-content:center;">お客様の声</div>
+      <div class="bigen">VOICE</div>
+      <h2 class="sec-title">ご利用いただいた店舗様から</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card rv rv-d1">
+        <p>（サンプルテキスト）広告、採用、厨房機器までまとめて相談できたため、開業準備が非常にスムーズでした。複数業者を探す手間が省けて助かりました。</p>
+        <div class="testi-source">飲食店オーナー様（サンプル）</div>
+      </div>
+      <div class="testi-card rv rv-d2">
+        <p>（サンプルテキスト）求人内容を見直したことで、以前より応募が増えました。飲食店の採用に詳しい方に相談できたのが大きかったです。</p>
+        <div class="testi-source">居酒屋経営者様（サンプル）</div>
+      </div>
+      <div class="testi-card rv rv-d3">
+        <p>（サンプルテキスト）厨房機器について、予算に合わせて新品・中古の比較提案をしてもらえました。初めての開業で不安でしたが、安心して進められました。</p>
+        <div class="testi-source">カフェ経営者様（サンプル）</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ （抜粋） -->
+<section class="section-pad" style="background:var(--cream);" id="faq">
+  <div class="wrap">
+    <div class="rv" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;">
+      <div>
+        <div class="lead">よくある質問</div>
+        <div class="bigen">FAQ</div>
+        <h2 class="sec-title">よくいただくご質問</h2>
+      </div>
+      <a href="faq.html" class="arrow-link" style="flex-shrink:0;">すべてのFAQを見る</a>
+    </div>
+    <div class="faq-list rv" style="margin-top:40px;max-width:860px;">
+      <div class="faq-item">
+        <div class="faq-q">飲食店以外でも相談できますか？<span class="faq-icon">＋</span></div>
+        <div class="faq-a">（サンプル）基本的には飲食店を中心にサポートしていますが、内容によっては対応可能です。まずはご相談ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">広告だけ、人材採用だけの相談も可能ですか？<span class="faq-icon">＋</span></div>
+        <div class="faq-a">（サンプル）はい、可能です。広告、人材、厨房機器のいずれか単体でのご相談にも対応しています。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">まだ開業前でも相談できますか？<span class="faq-icon">＋</span></div>
+        <div class="faq-a">（サンプル）はい、開業前の段階からご相談いただけます。開業準備に必要な広告、採用、厨房機器についてご提案します。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- News -->
+<section class="section-pad" id="news">
+  <div class="wrap">
+    <div class="rv" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;">
+      <div>
+        <div class="lead">お知らせ・ブログ</div>
+        <div class="bigen">News</div>
+        <h2 class="sec-title">最新情報</h2>
+      </div>
+      <a href="news.html" class="arrow-link" style="flex-shrink:0;">お知らせ一覧</a>
+    </div>
+    <div class="news-list rv">
+      <a class="news-item" href="#">
+        <span class="date">2026.06.01</span>
+        <span class="cat">お知らせ</span>
+        <span class="ttl">WEBサイトをリニューアルしました（サンプル）</span>
+      </a>
+      <a class="news-item" href="#">
+        <span class="date">2026.05.15</span>
+        <span class="cat">ブログ</span>
+        <span class="ttl">飲食店の集客に役立つSNS広告活用法（サンプル）</span>
+      </a>
+      <a class="news-item" href="#">
+        <span class="date">2026.05.01</span>
+        <span class="cat">ブログ</span>
+        <span class="ttl">飲食店の求人で応募を増やす3つのポイント（サンプル）</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="wrap rv">
+    <div class="lead">お問い合わせ</div>
+    <div class="bigen">CONTACT</div>
+    <h2 class="sec-title" style="color:#fff;margin-top:16px;">飲食店の集客・採用・厨房機器で<br>お困りの方は、まずご相談ください。</h2>
+    <p>広告だけ、採用だけ、厨房機器だけのご相談も可能です。<br>（サンプル）店舗の状況に合わせて、最適な内容をご提案します。</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn btn-primary">無料相談・お見積りはこちら</a>
+      <a href="tel:00-0000-0000" class="btn btn-ghost-white">TEL.00-0000-0000（サンプル）</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <a href="index.html" class="f-logo-text">ZAS</a>
+        <div class="f-co">株式会社ZAS（サンプル）</div>
+        <div class="f-addr">〒000-0000<br>［所在地サンプル］</div>
+        <a class="f-tel" href="tel:00-0000-0000">TEL.00-0000-0000</a>
+        <div class="f-hrs">営業時間 00:00〜00:00（サンプル）／定休日：（サンプル）</div>
+        <div class="f-sns">
+          <a href="#">Instagram</a>
+          <a href="#">X（Twitter）</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+      <div class="f-nav-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="services.html">サービス一覧</a></li>
+          <li><a href="pricing.html">料金</a></li>
+          <li><a href="works.html">実績・事例</a></li>
+          <li><a href="faq.html">よくある質問</a></li>
+        </ul>
+      </div>
+      <div class="f-nav-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="news.html">お知らせ・ブログ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="recruit.html">採用情報</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+          <li><a href="tokusho.html">特定商取引法に基づく表記</a></li>
+          <li><a href="sitemap.html">サイトマップ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="f-copy">
+    <span>© 株式会社ZAS（サンプル）All Rights Reserved.</span>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="tokusho.html">特定商取引法に基づく表記</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

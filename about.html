@@ -2,76 +2,198 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>【テストサイト】株式会社ZAS（仮）| 会社概要</title>
-<meta name="description" content="【テスト用ダミーサイト】会社概要ページ。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>会社概要 | 株式会社ZAS（サンプル）</title>
+<meta name="description" content="（サンプル）株式会社ZASの会社概要。企業理念、会社情報、沿革をご紹介します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@500;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="test-banner">🚧 これはテストサイトです（本番コンテンツ未入稿）</div>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="logo">ZAS<span class="logo-sub">（テスト）</span></a>
+<header class="site-header solid" id="header">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo-text">ZAS</a>
     <nav class="site-nav">
-      <a href="index.html">トップ</a>
-      <a href="services.html">サービス</a>
-      <a href="about.html" class="active">会社概要</a>
-      <a href="contact.html">お問い合わせ</a>
+      <ul id="site-menu">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="about.html" style="color:var(--accent);">会社概要</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">サービス</a>
+          <ul class="dropdown">
+            <li><a href="service-ad.html">広告・集客支援</a></li>
+            <li><a href="service-recruit.html">人材採用支援</a></li>
+            <li><a href="service-kitchen.html">厨房機器販売</a></li>
+            <li><a href="service-support.html">開業・運営サポート</a></li>
+          </ul>
+        </li>
+        <li><a href="pricing.html">料金</a></li>
+        <li><a href="works.html">実績・事例</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="news.html">お知らせ</a></li>
+        <li><a href="recruit.html">採用情報</a></li>
+        <li><a href="contact.html" class="cta-nav">無料相談はこちら</a></li>
+      </ul>
     </nav>
-    <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+    <div class="burger" id="burger" aria-label="メニューを開く" aria-expanded="false">
       <span></span><span></span><span></span>
-    </button>
+    </div>
   </div>
 </header>
 
+<section class="page-hero">
+  <div class="wrap">
+    <div class="page-hero-tag">ABOUT</div>
+    <h1>会社概要</h1>
+    <p>（サンプル）飲食店の成長を支える専門パートナーとして、集客・採用・厨房機器をワンストップでご支援します。</p>
+  </div>
+</section>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <div class="wrap">
+    <ol>
+      <li><a href="index.html">トップ</a></li>
+      <li>会社概要</li>
+    </ol>
+  </div>
+</nav>
+
 <main>
-  <section class="page-head">
-    <div class="container">
-      <p class="page-tag">ABOUT（テスト）</p>
-      <h1>会社概要</h1>
-      <p class="page-lead">［ページリード文ダミー］会社の理念や事業内容を紹介する文章がここに入ります。</p>
+  <!-- 企業理念 -->
+  <section class="section-pad">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="rv">
+          <div class="lead">企業理念</div>
+          <div class="bigen">PHILOSOPHY</div>
+          <p class="sec-lead" style="margin-top:16px;">（サンプルテキスト）飲食店の成長を支え、地域の食文化と店舗経営の発展に貢献します。</p>
+          <div class="philosophy-block">
+            <div class="philosophy-item">
+              <h3>ミッション</h3>
+              <p>（サンプルテキスト）飲食店が抱える集客・採用・設備面の課題を解決し、店舗運営に集中できる環境づくりを支援します。</p>
+            </div>
+            <div class="philosophy-item">
+              <h3>ビジョン</h3>
+              <p>（サンプルテキスト）飲食店にとって、困った時にまず相談されるパートナー企業を目指します。</p>
+            </div>
+            <div class="philosophy-item">
+              <h3>バリュー</h3>
+              <p>（サンプルテキスト）専門性・誠実さ・スピードをもって、一店舗一店舗のオーナー様と向き合い続けます。</p>
+            </div>
+          </div>
+        </div>
+        <div class="rv rv-d1">
+          <img class="about-img" src="https://picsum.photos/seed/zas-company/900/700" alt="会社イメージ（サンプル）" style="height:500px;">
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container narrow">
-      <h2 class="section-title">ミッション（仮）</h2>
-      <p>［ミッション文ダミー］テストテキストテストテキストテストテキストテストテキスト。あああああ、いいいいい、ううううう、えええええ、おおおおお。</p>
-
-      <h2 class="section-title" style="margin-top:3rem;">会社情報</h2>
-      <table class="info-table">
+  <!-- 会社情報 -->
+  <section class="section-pad" style="background:var(--cream);">
+    <div class="wrap-narrow">
+      <div class="rv">
+        <div class="lead">会社情報</div>
+        <div class="bigen">COMPANY INFO</div>
+        <h2 class="sec-title">会社概要</h2>
+      </div>
+      <table class="info-table rv" style="margin-top:32px;">
         <tbody>
-          <tr><th>会社名</th><td>株式会社ZAS（テスト表示）</td></tr>
-          <tr><th>設立</th><td>YYYY年MM月DD日（仮）</td></tr>
-          <tr><th>代表者</th><td>［代表者名］（テスト）</td></tr>
-          <tr><th>所在地</th><td>〒000-0000 ［住所をここに記載］（テスト）</td></tr>
-          <tr><th>事業内容</th><td>［事業内容ダミー］マーケティング支援事業（テスト）</td></tr>
-          <tr><th>連絡先</th><td>test@example.com（ダミー）</td></tr>
+          <tr><th>会社名</th><td>株式会社ZAS（サンプル）</td></tr>
+          <tr><th>所在地</th><td>〒000-0000 ［所在地サンプル］</td></tr>
+          <tr><th>設立</th><td>XXXX年XX月（サンプル）</td></tr>
+          <tr><th>代表者名</th><td>［代表者名サンプル］</td></tr>
+          <tr><th>事業内容</th>
+            <td>
+              飲食店向け広告・集客支援事業<br>
+              飲食店向け人材採用支援事業<br>
+              厨房機器・店舗設備の販売事業<br>
+              飲食店の開業・運営支援<br>
+              各種販促物・Web関連サービスの企画提案
+            </td>
+          </tr>
+          <tr><th>電話番号</th><td>00-0000-0000（サンプル）</td></tr>
+          <tr><th>メールアドレス</th><td>info@example.com（サンプル）</td></tr>
+          <tr><th>営業時間</th><td>00:00〜00:00（サンプル）／定休日：（サンプル）</td></tr>
         </tbody>
       </table>
     </div>
   </section>
 
-  <section class="section section-alt">
-    <div class="container cta">
-      <h2>[CTA] ダミーテキスト</h2>
-      <p>［CTA説明文ダミー］お問い合わせはこちらから。</p>
-      <a href="contact.html" class="btn btn-primary">お問い合わせ（テスト）</a>
+  <!-- 沿革 -->
+  <section class="section-pad">
+    <div class="wrap">
+      <div class="rv">
+        <div class="lead">沿革</div>
+        <div class="bigen">HISTORY</div>
+        <h2 class="sec-title">歩み</h2>
+      </div>
+      <div class="timeline-wrap">
+        <div class="timeline rv">
+          <div class="tl-item"><div class="y">XXXX</div><div class="t">会社設立（サンプル）</div></div>
+          <div class="tl-item"><div class="y">XXXX</div><div class="t">飲食店向け広告支援サービス開始（サンプル）</div></div>
+          <div class="tl-item"><div class="y">XXXX</div><div class="t">人材採用支援サービス開始（サンプル）</div></div>
+          <div class="tl-item"><div class="y">XXXX</div><div class="t">厨房機器販売事業開始（サンプル）</div></div>
+          <div class="tl-item"><div class="y">現在</div><div class="t">（サンプル）</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="wrap rv">
+      <div class="lead">お問い合わせ</div>
+      <div class="bigen">CONTACT</div>
+      <h2 class="sec-title" style="color:#fff;margin-top:16px;">まずはお気軽にご相談ください</h2>
+      <p>（サンプル）飲食店の集客・採用・厨房機器でお困りの方は、お気軽にご相談ください。</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-primary">無料相談・お見積りはこちら</a>
+      </div>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <p class="footer-logo">ZAS（テスト）</p>
-    <nav class="footer-nav">
-      <a href="index.html">トップ</a>
-      <a href="services.html">サービス</a>
-      <a href="about.html">会社概要</a>
-      <a href="contact.html">お問い合わせ</a>
-    </nav>
-    <p class="copyright">&copy; 2026 株式会社ZAS（テスト表示）</p>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <a href="index.html" class="f-logo-text">ZAS</a>
+        <div class="f-co">株式会社ZAS（サンプル）</div>
+        <div class="f-addr">〒000-0000 ［所在地サンプル］</div>
+        <a class="f-tel" href="tel:00-0000-0000">TEL.00-0000-0000</a>
+        <div class="f-hrs">営業時間 00:00〜00:00（サンプル）</div>
+        <div class="f-sns"><a href="#">Instagram</a><a href="#">X（Twitter）</a><a href="#">Facebook</a></div>
+      </div>
+      <div class="f-nav-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="services.html">サービス一覧</a></li>
+          <li><a href="pricing.html">料金</a></li>
+          <li><a href="works.html">実績・事例</a></li>
+          <li><a href="faq.html">よくある質問</a></li>
+        </ul>
+      </div>
+      <div class="f-nav-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="news.html">お知らせ・ブログ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="recruit.html">採用情報</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+          <li><a href="tokusho.html">特定商取引法に基づく表記</a></li>
+          <li><a href="sitemap.html">サイトマップ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="f-copy">
+    <span>© 株式会社ZAS（サンプル）All Rights Reserved.</span>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="tokusho.html">特定商取引法に基づく表記</a>
   </div>
 </footer>
 

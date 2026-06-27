@@ -2,78 +2,144 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>【テストサイト】株式会社ZAS（仮）| お問い合わせ</title>
-<meta name="description" content="【テスト用ダミーサイト】お問い合わせページ。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ | 株式会社ZAS（サンプル）</title>
+<meta name="description" content="（サンプル）飲食店の広告・採用・厨房機器に関するご相談・お見積りはこちらからお問い合わせください。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@500;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="test-banner">🚧 これはテストサイトです（本番コンテンツ未入稿）</div>
-
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="logo">ZAS<span class="logo-sub">（テスト）</span></a>
+<header class="site-header solid" id="header">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo-text">ZAS</a>
     <nav class="site-nav">
-      <a href="index.html">トップ</a>
-      <a href="services.html">サービス</a>
-      <a href="about.html">会社概要</a>
-      <a href="contact.html" class="active">お問い合わせ</a>
+      <ul id="site-menu">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="about.html">会社概要</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">サービス</a>
+          <ul class="dropdown">
+            <li><a href="service-ad.html">広告・集客支援</a></li>
+            <li><a href="service-recruit.html">人材採用支援</a></li>
+            <li><a href="service-kitchen.html">厨房機器販売</a></li>
+            <li><a href="service-support.html">開業・運営サポート</a></li>
+          </ul>
+        </li>
+        <li><a href="pricing.html">料金</a></li>
+        <li><a href="works.html">実績・事例</a></li>
+        <li><a href="faq.html">よくある質問</a></li>
+        <li><a href="news.html">お知らせ</a></li>
+        <li><a href="recruit.html">採用情報</a></li>
+        <li><a href="contact.html" class="cta-nav" style="background:var(--accent-deep);">無料相談はこちら</a></li>
+      </ul>
     </nav>
-    <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="burger" id="burger" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></div>
   </div>
 </header>
 
+<section class="page-hero">
+  <div class="wrap">
+    <div class="page-hero-tag">CONTACT</div>
+    <h1>お問い合わせ</h1>
+    <p>（サンプル）飲食店の集客・採用・厨房機器に関するご相談は、お気軽にお問い合わせください。広告だけ、採用だけ、厨房機器だけのご相談も可能です。</p>
+  </div>
+</section>
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <div class="wrap"><ol><li><a href="index.html">トップ</a></li><li>お問い合わせ</li></ol></div>
+</nav>
+
 <main>
-  <section class="page-head">
-    <div class="container">
-      <p class="page-tag">CONTACT（テスト）</p>
-      <h1>お問い合わせ</h1>
-      <p class="page-lead">［ページリード文ダミー］お問い合わせ前の案内文がここに入ります。</p>
-    </div>
-  </section>
+  <section class="section-pad">
+    <div class="wrap">
+      <div class="contact-grid">
+        <!-- 左：連絡先情報 -->
+        <div class="rv">
+          <h3>お電話・メールでのお問い合わせ</h3>
+          <div class="contact-info-item">
+            <div class="contact-info-label">電話番号</div>
+            <a class="contact-tel-num" href="tel:00-0000-0000">00-0000-0000（サンプル）</a>
+            <div class="contact-hrs">受付時間 00:00〜00:00（サンプル）／定休日：（サンプル）</div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-label">メールアドレス</div>
+            <a href="mailto:info@example.com" style="color:var(--accent);">info@example.com（サンプル）</a>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-label">所在地</div>
+            <p style="color:var(--muted);font-size:.9rem;">〒000-0000<br>［所在地サンプル］</p>
+          </div>
+          <div style="margin-top:28px;padding:20px 22px;background:var(--cream);border-radius:4px;">
+            <p style="font-size:.9rem;color:var(--muted);">
+              （サンプル）お問い合わせ内容例<br>
+              ・集客を増やしたい<br>
+              ・求人応募を増やしたい<br>
+              ・厨房機器を導入したい<br>
+              ・開業準備について相談したい<br>
+              ・まずは見積りを取りたい
+            </p>
+          </div>
+        </div>
 
-  <section class="section">
-    <div class="container narrow">
-      <p class="notice">※このフォームはダミーです。送信ボタンを押しても実際には送信されません。</p>
-
-      <form class="contact-form" onsubmit="event.preventDefault(); alert('これはテスト用フォームです。実際の送信は行われません。');">
-        <div class="form-row">
-          <label for="name">お名前 <span class="required">必須</span></label>
-          <input type="text" id="name" name="name" placeholder="例：山田 太郎（テスト）" required>
+        <!-- 右：フォーム -->
+        <div class="rv rv-d1">
+          <div class="contact-notice">
+            ※このフォームはサンプル表示です。送信ボタンを押しても現時点では送信されません。（送信機能は後日設定予定）
+          </div>
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('現在送信機能は準備中です。（サンプル）');">
+            <div class="form-row">
+              <label for="name">お名前<span class="req">必須</span></label>
+              <input type="text" id="name" name="name" placeholder="例：山田 太郎（サンプル）" required>
+            </div>
+            <div class="form-row">
+              <label for="company">会社名・店舗名</label>
+              <input type="text" id="company" name="company" placeholder="例：株式会社〇〇（サンプル）">
+            </div>
+            <div class="form-row">
+              <label for="tel">電話番号</label>
+              <input type="tel" id="tel" name="tel" placeholder="例：00-0000-0000">
+            </div>
+            <div class="form-row">
+              <label for="email">メールアドレス<span class="req">必須</span></label>
+              <input type="email" id="email" name="email" placeholder="例：info@example.com" required>
+            </div>
+            <div class="form-row">
+              <label for="area">店舗所在地</label>
+              <input type="text" id="area" name="area" placeholder="例：大阪府大阪市（サンプル）">
+            </div>
+            <div class="form-row">
+              <label>希望するサービス</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="service" value="ad"> 広告・集客</label>
+                <label><input type="checkbox" name="service" value="recruit"> 人材採用</label>
+                <label><input type="checkbox" name="service" value="kitchen"> 厨房機器</label>
+                <label><input type="checkbox" name="service" value="open"> 開業相談</label>
+                <label><input type="checkbox" name="service" value="other"> その他</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="message">お問い合わせ詳細<span class="req">必須</span></label>
+              <textarea id="message" name="message" rows="6" placeholder="（サンプル）ご相談内容、現在のお困りごとなどをご記入ください。" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;padding:16px;">送信する（サンプル）</button>
+          </form>
         </div>
-        <div class="form-row">
-          <label for="company">会社名</label>
-          <input type="text" id="company" name="company" placeholder="例：株式会社サンプル（テスト）">
-        </div>
-        <div class="form-row">
-          <label for="email">メールアドレス <span class="required">必須</span></label>
-          <input type="email" id="email" name="email" placeholder="example@example.com" required>
-        </div>
-        <div class="form-row">
-          <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
-          <textarea id="message" name="message" rows="6" placeholder="［テスト用入力欄］お問い合わせ内容をご記入ください。" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">送信する（テスト）</button>
-      </form>
+      </div>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <p class="footer-logo">ZAS（テスト）</p>
-    <nav class="footer-nav">
-      <a href="index.html">トップ</a>
-      <a href="services.html">サービス</a>
-      <a href="about.html">会社概要</a>
-      <a href="contact.html">お問い合わせ</a>
-    </nav>
-    <p class="copyright">&copy; 2026 株式会社ZAS（テスト表示）</p>
+  <div class="wrap">
+    <div class="f-top">
+      <div><a href="index.html" class="f-logo-text">ZAS</a><div class="f-co">株式会社ZAS（サンプル）</div><div class="f-addr">〒000-0000 ［所在地サンプル］</div><a class="f-tel" href="tel:00-0000-0000">TEL.00-0000-0000</a><div class="f-hrs">営業時間 00:00〜00:00（サンプル）</div><div class="f-sns"><a href="#">Instagram</a><a href="#">X（Twitter）</a><a href="#">Facebook</a></div></div>
+      <div class="f-nav-col"><h4>Menu</h4><ul><li><a href="index.html">トップ</a></li><li><a href="about.html">会社概要</a></li><li><a href="services.html">サービス一覧</a></li><li><a href="pricing.html">料金</a></li><li><a href="works.html">実績・事例</a></li><li><a href="faq.html">よくある質問</a></li></ul></div>
+      <div class="f-nav-col"><h4>Info</h4><ul><li><a href="news.html">お知らせ・ブログ</a></li><li><a href="contact.html">お問い合わせ</a></li><li><a href="recruit.html">採用情報</a></li><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="tokusho.html">特定商取引法に基づく表記</a></li><li><a href="sitemap.html">サイトマップ</a></li></ul></div>
+    </div>
   </div>
+  <div class="f-copy"><span>© 株式会社ZAS（サンプル）All Rights Reserved.</span><a href="privacy.html">プライバシーポリシー</a><a href="tokusho.html">特定商取引法に基づく表記</a></div>
 </footer>
-
 <script src="js/script.js"></script>
 </body>
 </html>
