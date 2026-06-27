@@ -877,13 +877,15 @@ ul { list-style: none; }
   .service-cards { grid-template-columns: repeat(2, 1fr); }
   .strength-grid { grid-template-columns: repeat(2, 1fr); }
   .works-grid, .testi-grid { grid-template-columns: repeat(2, 1fr); }
-  .pricing-grid { grid-template-columns: 1fr; max-width: 420px; }
+  .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
   .contact-grid { grid-template-columns: 1fr; }
   .jobs-grid { grid-template-columns: repeat(2, 1fr); }
   .f-top { grid-template-columns: 1fr; gap: 36px; }
   .sitemap-grid { grid-template-columns: repeat(2, 1fr); }
   .service-menu { grid-template-columns: 1fr; }
   .section-pad { padding: 70px 0; }
+  .intro-imgs { height: 280px; }
+  .page-hero { padding: 120px 0 56px; }
 
   /* Mobile nav */
   .site-nav ul {
@@ -927,4 +929,19 @@ ul { list-style: none; }
   .pricing-grid { max-width: 100%; }
   .estimate-box { padding: 28px 24px; }
   .news-item .date { min-width: auto; }
+  .section-pad { padding: 56px 0; }
+
+  /* Table: stack th/td vertically on narrow phones */
+  .info-table,
+  .legal-table { display: block; overflow-x: visible; }
+  .info-table tbody,
+  .legal-table tbody { display: block; }
+  .info-table tr,
+  .legal-table tr { display: block; border-bottom: 1px solid var(--line); padding-bottom: 4px; margin-bottom: 4px; }
+  .info-table tr:last-child,
+  .legal-table tr:last-child { border-bottom: 0; }
+  .info-table th, .info-table td,
+  .legal-table th, .legal-table td { display: block; width: 100% !important; border: 0; padding: 4px 0; box-sizing: border-box; }
+  .info-table th,
+  .legal-table th { padding-top: 14px; font-size: .78rem; letter-spacing: .08em; color: var(--accent); font-weight: 700; border-bottom: 0; }
 }

@@ -1,14 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>お問い合わせ | 株式会社ZAS（サンプル）</title>
-<meta name="description" content="（サンプル）飲食店の広告・採用・厨房機器に関するご相談・お見積りはこちらからお問い合わせください。">
+<title>お問い合わせ | 株式会社ZAS</title>
+<meta name="description" content="飲食店の広告・採用・厨房機器に関するご相談・お見積りはこちらからお問い合わせください。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@500;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="株式会社ZAS">
+<meta property="og:title" content="お問い合わせ | 株式会社ZAS">
+<meta property="og:description" content="飲食店の広告・採用・厨房機器に関するご相談・お見積りはこちらからお問い合わせください。">
+<meta property="og:url" content="https://zas-marketing.com/contact.html">
+<meta property="og:image" content="https://zas-marketing.com/images/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 <header class="site-header solid" id="header">
@@ -30,7 +38,6 @@
         <li><a href="pricing.html">料金</a></li>
         <li><a href="works.html">実績・事例</a></li>
         <li><a href="faq.html">よくある質問</a></li>
-        <li><a href="news.html">お知らせ</a></li>
         <li><a href="recruit.html">採用情報</a></li>
         <li><a href="contact.html" class="cta-nav" style="background:var(--accent-deep);">無料相談はこちら</a></li>
       </ul>
@@ -43,7 +50,7 @@
   <div class="wrap">
     <div class="page-hero-tag">CONTACT</div>
     <h1>お問い合わせ</h1>
-    <p>（サンプル）飲食店の集客・採用・厨房機器に関するご相談は、お気軽にお問い合わせください。広告だけ、採用だけ、厨房機器だけのご相談も可能です。</p>
+    <p>飲食店の集客・採用・厨房機器に関するご相談は、お気軽にお問い合わせください。広告だけ、採用だけ、厨房機器だけのご相談も可能です。</p>
   </div>
 </section>
 <nav class="breadcrumb" aria-label="パンくずリスト">
@@ -59,12 +66,12 @@
           <h3>お電話・メールでのお問い合わせ</h3>
           <div class="contact-info-item">
             <div class="contact-info-label">電話番号</div>
-            <a class="contact-tel-num" href="tel:00-0000-0000">00-0000-0000（サンプル）</a>
-            <div class="contact-hrs">受付時間 00:00〜00:00（サンプル）／定休日：（サンプル）</div>
+            <a class="contact-tel-num" href="tel:00-0000-0000">00-0000-0000</a>
+            <div class="contact-hrs">受付時間 00:00〜00:00／定休日：</div>
           </div>
           <div class="contact-info-item">
             <div class="contact-info-label">メールアドレス</div>
-            <a href="mailto:info@example.com" style="color:var(--accent);">info@example.com（サンプル）</a>
+            <a href="mailto:info@example.com" style="color:var(--accent);">info@example.com</a>
           </div>
           <div class="contact-info-item">
             <div class="contact-info-label">所在地</div>
@@ -72,7 +79,7 @@
           </div>
           <div style="margin-top:28px;padding:20px 22px;background:var(--cream);border-radius:4px;">
             <p style="font-size:.9rem;color:var(--muted);">
-              （サンプル）お問い合わせ内容例<br>
+              お問い合わせ内容例<br>
               ・集客を増やしたい<br>
               ・求人応募を増やしたい<br>
               ・厨房機器を導入したい<br>
@@ -84,21 +91,19 @@
 
         <!-- 右：フォーム -->
         <div class="rv rv-d1">
-          <div class="contact-notice">
-            ※このフォームはサンプル表示です。送信ボタンを押しても現時点では送信されません。（送信機能は後日設定予定）
-          </div>
-          <form class="contact-form" onsubmit="event.preventDefault(); alert('現在送信機能は準備中です。（サンプル）');">
+          <form class="contact-form" action="https://formspree.io/f/xzdlrnpe" method="POST">
+            <input type="hidden" name="_subject" value="【ZAS】お問い合わせがあります">
             <div class="form-row">
               <label for="name">お名前<span class="req">必須</span></label>
-              <input type="text" id="name" name="name" placeholder="例：山田 太郎（サンプル）" required>
+              <input type="text" id="name" name="name" placeholder="例：山田 太郎" required>
             </div>
             <div class="form-row">
               <label for="company">会社名・店舗名</label>
-              <input type="text" id="company" name="company" placeholder="例：株式会社〇〇（サンプル）">
+              <input type="text" id="company" name="company" placeholder="例：株式会社〇〇 / ○○食堂">
             </div>
             <div class="form-row">
               <label for="tel">電話番号</label>
-              <input type="tel" id="tel" name="tel" placeholder="例：00-0000-0000">
+              <input type="tel" id="tel" name="tel" placeholder="例：06-0000-0000">
             </div>
             <div class="form-row">
               <label for="email">メールアドレス<span class="req">必須</span></label>
@@ -106,7 +111,7 @@
             </div>
             <div class="form-row">
               <label for="area">店舗所在地</label>
-              <input type="text" id="area" name="area" placeholder="例：大阪府大阪市（サンプル）">
+              <input type="text" id="area" name="area" placeholder="例：大阪府大阪市">
             </div>
             <div class="form-row">
               <label>希望するサービス</label>
@@ -120,9 +125,10 @@
             </div>
             <div class="form-row">
               <label for="message">お問い合わせ詳細<span class="req">必須</span></label>
-              <textarea id="message" name="message" rows="6" placeholder="（サンプル）ご相談内容、現在のお困りごとなどをご記入ください。" required></textarea>
+              <textarea id="message" name="message" rows="6" placeholder="ご相談内容、現在のお困りごとなどをご記入ください。" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="width:100%;padding:16px;">送信する（サンプル）</button>
+            <p style="font-size:.8rem;color:var(--muted);margin-bottom:12px;">送信をもって<a href="privacy.html" style="color:var(--accent);">プライバシーポリシー</a>に同意したものとみなします。</p>
+            <button type="submit" class="btn btn-primary" style="width:100%;padding:16px;">送信する</button>
           </form>
         </div>
       </div>
@@ -133,12 +139,12 @@
 <footer class="site-footer">
   <div class="wrap">
     <div class="f-top">
-      <div><a href="index.html" class="f-logo-text">ZAS</a><div class="f-co">株式会社ZAS（サンプル）</div><div class="f-addr">〒000-0000 ［所在地サンプル］</div><a class="f-tel" href="tel:00-0000-0000">TEL.00-0000-0000</a><div class="f-hrs">営業時間 00:00〜00:00（サンプル）</div><div class="f-sns"><a href="#">Instagram</a><a href="#">X（Twitter）</a><a href="#">Facebook</a></div></div>
+      <div><a href="index.html" class="f-logo-text">ZAS</a><div class="f-co">株式会社ZAS</div><div class="f-addr">〒000-0000 ［所在地サンプル］</div><a class="f-tel" href="tel:00-0000-0000">TEL.00-0000-0000</a><div class="f-hrs">営業時間 00:00〜00:00</div><div class="f-sns"><a href="#">Instagram</a><a href="#">X（Twitter）</a><a href="#">Facebook</a></div></div>
       <div class="f-nav-col"><h4>Menu</h4><ul><li><a href="index.html">トップ</a></li><li><a href="about.html">会社概要</a></li><li><a href="services.html">サービス一覧</a></li><li><a href="pricing.html">料金</a></li><li><a href="works.html">実績・事例</a></li><li><a href="faq.html">よくある質問</a></li></ul></div>
-      <div class="f-nav-col"><h4>Info</h4><ul><li><a href="news.html">お知らせ・ブログ</a></li><li><a href="contact.html">お問い合わせ</a></li><li><a href="recruit.html">採用情報</a></li><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="tokusho.html">特定商取引法に基づく表記</a></li><li><a href="sitemap.html">サイトマップ</a></li></ul></div>
+      <div class="f-nav-col"><h4>Info</h4><ul><li><a href="contact.html">お問い合わせ</a></li><li><a href="recruit.html">採用情報</a></li><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="tokusho.html">特定商取引法に基づく表記</a></li><li><a href="sitemap.html">サイトマップ</a></li></ul></div>
     </div>
   </div>
-  <div class="f-copy"><span>© 株式会社ZAS（サンプル）All Rights Reserved.</span><a href="privacy.html">プライバシーポリシー</a><a href="tokusho.html">特定商取引法に基づく表記</a></div>
+  <div class="f-copy"><span>© 株式会社ZAS All Rights Reserved.</span><a href="privacy.html">プライバシーポリシー</a><a href="tokusho.html">特定商取引法に基づく表記</a></div>
 </footer>
 <script src="js/script.js"></script>
 </body>
