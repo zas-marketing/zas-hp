@@ -904,6 +904,7 @@ ul { list-style: none; }
     display: none; position: static; transform: none;
     background: transparent; border: 0; padding: 8px 0 4px 0;
     box-shadow: none; flex-direction: column; gap: 0;
+    height: auto; min-height: 0; width: auto; max-width: none;
   }
   .has-dropdown.open .dropdown { display: flex; }
   .site-nav .dropdown li { padding: 0; border-bottom: 0; }
