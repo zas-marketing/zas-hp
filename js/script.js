@@ -20,6 +20,7 @@
     });
     menu.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', function () {
+        if (window.innerWidth <= 960 && a.parentElement.classList.contains('has-dropdown')) return;
         menu.classList.remove('open');
         header.classList.remove('menu-open');
       });
